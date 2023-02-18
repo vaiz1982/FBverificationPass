@@ -38,7 +38,7 @@ public class VerifyTheCreateAccountOnFaceBookPagebyAlexey extends UtilitesClass 
           // placeholder="" aria-label="Mobile number or email" id="u_2_g_/D">
         Thread.sleep(1000);
         WebElement mobileNumber = driver.findElement(By.cssSelector("input[aria-label='Mobile number or email']"));
-        mobileNumber.sendKeys("1224659069");
+        mobileNumber.sendKeys("1234567890"); //INCORRECT PHONE NUMBER - RED ALERT MUST POP UPS ON THE SCREEN IT MUST BE VISIABLE AND PREVENT LOG IN CORRECTLY
 
         //new password
         //<input type="password" class="inputtext _58mg _5dba _2ph-" data-type="password" autocomplete="new-password" name="reg_passwd__"
