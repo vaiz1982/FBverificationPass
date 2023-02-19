@@ -11,14 +11,14 @@ public class ActionsDrugAndDrop extends UtilitesClass {
         driver.get("http://dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");
 
         //<div class="dragableBox" id="box3" dragableelement="2" style="visibility: visible;">Washington</div>
-        WebElement washingtonDragAndDrom = driver.findElement(By.id("box3"));
+        WebElement washingtonDragAndDrop = driver.findElement(By.id("box3"));
         //we need target where we ging to move it - we going to move it to usa!
         //<div id="box103" class="dragableBoxRight">United States</div>
         WebElement targetUSA = driver.findElement(By.id("box103"));
 
         Actions actions = new Actions(driver); //we create object
         // action for particular
-        Action washingtonAction = actions.dragAndDrop(washingtonDragAndDrom, targetUSA).build();
+        Action washingtonAction = actions.dragAndDrop(washingtonDragAndDrop, targetUSA).build();
         washingtonAction.perform();
 
         //<div class="dragableBox" id="box7" dragableelement="6">Madrid</div>
@@ -29,10 +29,10 @@ public class ActionsDrugAndDrop extends UtilitesClass {
         romeAction.perform();
 
         //<div class="dragableBox" id="box6" dragableelement="5">Rome</div>
-        WebElement romeDragAndDrom = driver.findElement(By.id("box6"));
+        WebElement romeDragAndDrop = driver.findElement(By.id("box6"));
         //<div id="box106" class="dragableBoxRight">Italy</div>
         WebElement targetItaly = driver.findElement(By.id("box106"));
-        Action madridAction = actions.dragAndDrop(romeDragAndDrom, targetItaly).build();
+        Action madridAction = actions.dragAndDrop(romeDragAndDrop, targetItaly).build();
         madridAction.perform();
 
         //<div class="dragableBox" id="box2" dragableelement="1" style="visibility: visible;">Stockholm</div>
